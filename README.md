@@ -18,7 +18,8 @@ make platform=android -j4
 对应的操作  
 ./make-standalone-toolchain.sh --toolchain=arm-linux-androideabi-4.9 --platform=android-19 --ndk-dir=../../ --system=windows --install-dir=../../tmp/android-stdtc   
 set PATH=F:\android-ndk-r10e\tmp\android-stdtc\bin;%path%  
-windows下可以构建独立工具链，但是编译不通过的。   
+windows下可以构建独立工具链，但是编译不通过的。 
+![windows独立工具链](https://github.com/havenow/mame2010-libretro/blob/master/pic/windows独立工具链.png)
 
 # 输出编译日志  
 修改makefile,主要是输出编译日志
