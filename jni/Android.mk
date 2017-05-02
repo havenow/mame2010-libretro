@@ -49,7 +49,7 @@ LOCAL_CPP_EXTENSION := .c
 
 include $(BUILD_SHARED_LIBRARY)
 
-//目录下默认的是Android.mk
+#目录下默认的是Android.mk
 $(call import-add-path, $(LOCAL_PATH))
 $(call import-module, $(CORE_DIR)/mame/drivers/alba)
 $(call import-module, $(CORE_DIR)/mame/drivers/alliedl)
@@ -150,6 +150,6 @@ $(call import-module, $(CORE_DIR)/android_mk/libexpat)
 $(call import-module, $(CORE_DIR)/android_mk/libsoftfloat)
 $(call import-module, $(CORE_DIR)/android_mk/libocore)
 
-//以名称指定mk文件
+#以名称指定mk文件
 #include $(CORE_DIR)/mame/drivers/Android_alba.mk
 #include $(CORE_DIR)/mame/drivers/Android_alliedl.mk
