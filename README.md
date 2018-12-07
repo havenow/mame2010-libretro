@@ -1,4 +1,10 @@
-mame2010-libretro没有android的makefile工程，无法用ndk-build直接编译，现在做liunx下makefile到android makefile工程的移植(在mac下编译时输出编译日志，根据编译日志，编写Android.mk)。下面的代码修改只是自己学习使用，不要将代码push到官方。  
+# windows平台ndk编译日志输出     
+ndk-build > compile-log.txt 2>&1(将编译信息输出到comiple.txt中，包含警告信息)     
+ndk-build > compile-log.txt 2>1(将编译信息输出到comiple.txt中，不包含警告信息，警告信息输出到文件1中)     
+ndk-build > compile-log.txt(将编译信息输出到comiple.txt中，不包含警告信息，警告信息输出到控制台中)     
+
+# 说明
+mame2010-libretro没有android的makefile工程，无法用ndk-build直接编译，现在做liunx下makefile到android makefile工程的移植(在mac下编译时输出编译日志，根据编译日志，编写Android.mk)。下面的代码修改只是自己学习使用，不要将代码push到官方。  
 
 # 编译说明
 
